@@ -1,0 +1,39 @@
+#!/usr/bin/expect -f
+
+set timeout -1
+spawn sudo ./install
+
+expect -gl "Press enter to continue..."
+send -- "\r"
+
+expect {
+    -gl "*--More--*" { send -- " "; exp_continue }
+    -ex "Do you accept these terms? (accept,decline)"
+}
+send -- "accept\r"
+
+expect -gl "Please choose install option"
+send -- "1\r"
+
+expect -gl "Installation directory?"
+send -- "\r"
+
+expect -gl "Do you wish to update/create links in the 2019 directory?"
+send -- "y\r"
+
+expect -gl "Press enter to continue..."
+send -- "\r"
+
+expect -gl "Do you want to install Open MPI onto your system?"
+send -- "y\r"
+
+expect -gl "Do you want to enable NVIDIA GPU support in Open MPI?"
+send -- "y\r"
+
+expect -gl "Do you wish to obtain permanent license key or configure license service?"
+send -- "n\r"
+
+expect -gl "Do you want the files in the install directory to be read-only?"
+send -- "n\r"
+
+expect eof
