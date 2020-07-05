@@ -84,8 +84,5 @@ pip3 install -e .
 cd ..
 
 sudo apt-get install python3-matplotlib -y
-
-
-#sudo pip3 install jupyter
-#sudo snap install jupyter
+sudo pip3 install jupyter
 
