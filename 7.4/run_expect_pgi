@@ -37,3 +37,4 @@ expect -gl "Do you want the files in the install directory to be read-only?"
 send -- "n\r"
 
 expect eof
+
