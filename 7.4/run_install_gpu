@@ -5,7 +5,7 @@
 #service sshd restart
 #sudo chmod 644 /etc/ssh/sshd_config
 
-#scp -P 9000 ds@ds.southcentralus.cloudapp.azure.com:~/test2/run_expect_pgi .
+#scp -P 9000 ds@ds.southcentralus.cloudapp.azure.com:~/run_expect_pgi .
 #scp -P 9000 ./* ds@ds.southcentralus.cloudapp.azure.com:~/
 #ssh -p 9000 ds@ds.southcentralus.cloudapp.azure.com
 
