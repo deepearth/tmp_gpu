@@ -5,9 +5,9 @@
 #service sshd restart
 #sudo chmod 644 /etc/ssh/sshd_config
 
-#scp -P 9000 ds@ds.southcentralus.cloudapp.azure.com:~/run_expect_pgi .
-#scp -P 9000 ./* ds@ds.southcentralus.cloudapp.azure.com:~/
-#ssh -p 9000 ds@ds.southcentralus.cloudapp.azure.com
+#scp -P 9000 x@x.southcentralus.cloudapp.azure.com:~/run_expect_pgi .
+#scp -P 9000 ./* x@x.southcentralus.cloudapp.azure.com:~/
+#ssh -p 9000 x@x.southcentralus.cloudapp.azure.com
 
 
 
@@ -24,8 +24,8 @@ sudo apt install gedit -y
 echo "#################### Installing build-essential, libelf-dev, libffi-dev"
 sudo apt update -y
 sudo apt install build-essential -y
-sudo apt-get install -y libelf-dev libffi-dev -y
-sudo apt install -y pkg-config -y
+sudo apt-get install libelf-dev libffi-dev -y
+sudo apt install pkg-config -y
 
 
 
