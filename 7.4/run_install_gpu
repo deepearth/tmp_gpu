@@ -1,17 +1,15 @@
 #!/bin/bash
 
-#sudo chmod 777 /etc/ssh/sshd_config
-#echo Port 9000 >> /etc/ssh/sshd_config
-#service sshd restart
-#sudo chmod 644 /etc/ssh/sshd_config
+# sudo chmod 777 /etc/ssh/sshd_config
+# echo Port 9000 >> /etc/ssh/sshd_config
+# service sshd restart
+# sudo chmod 644 /etc/ssh/sshd_config
 
-sudo chmod 777 /etc/ssh/sshd_config; echo Port 9000 >> /etc/ssh/sshd_config; service sshd restart; sudo chmod 644 /etc/ssh/sshd_config
+# echo "PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '" >> .bashrc
 
-echo "PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u@\h: \w\a\]$PS1"" >> .bashrc
-
-#scp -P 9000 x@x.southcentralus.cloudapp.azure.com:~/run_expect_pgi .
-#scp -P 9000 ./* x@x.southcentralus.cloudapp.azure.com:~/
-#ssh -p 9000 x@x.southcentralus.cloudapp.azure.com
+# scp -P 9000 x@x.southcentralus.cloudapp.azure.com:~/run_expect_pgi .
+# scp -P 9000 ./* x@x.southcentralus.cloudapp.azure.com:~/
+# ssh -p 9000 x@x.southcentralus.cloudapp.azure.com
 
 
 
